@@ -1,0 +1,96 @@
+/* Main App */
+.stApp {
+    background-color: #f7faf7;
+}
+
+/* Main Container */
+.block-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    max-width: 1200px;
+}
+
+/* Buttons */
+.stButton > button {
+    background-color: #2e7d32;
+    color: white;
+    border-radius: 12px;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    font-weight: bold;
+}
+
+.stButton > button:hover {
+    background-color: #1b5e20;
+}
+
+/* Upload Box */
+[data-testid="stFileUploader"] {
+    border: 2px dashed #4CAF50;
+    border-radius: 15px;
+    padding: 20px;
+    background: white;
+}
+
+/* Images */
+img {
+    border-radius: 15px;
+}
+
+/* Metric Cards */
+[data-testid="metric-container"] {
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background: #eef7ee;
+}
+
+/* Headers */
+h1, h2, h3 {
+    color: #1b5e20;
+}
+
+.hero{
+    background: linear-gradient(135deg,#2e7d32,#66bb6a);
+    color:white;
+    padding:40px;
+    border-radius:20px;
+    margin-bottom:30px;
+}
+
+.hero h1{
+    color:white;
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    font-size:20px;
+    opacity:0.9;
+}
+
+.hero-stats{
+    display:flex;
+    gap:20px;
+    margin-top:30px;
+}
+
+.stat-card{
+    background:rgba(255,255,255,.15);
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    min-width:160px;
+    backdrop-filter:blur(10px);
+}
+
+.stat-card h2{
+    color:white;
+    margin:0;
+    font-size:30px;
+}

@@ -22,22 +22,61 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
+from pathlib import Path
 
-st.title("Rice Leaf Disease Detection using EfficientNet-B0")
+def load_css():
+    css_path = Path("assets/css/style.css")
+    if css_path.exists():
+        with open(css_path) as f:
+            st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-st.markdown(
-"""
-Upload a **Rice Leaf Image** and the model will
+load_css()
 
-- Detect the disease
-- Show confidence score
-- Explain prediction using Grad-CAM
-- Display disease information
-"""
-)
+# st.title("Rice Leaf Disease Detection using EfficientNet-B0")
 
-st.divider()
+# st.markdown(
+# """
+# Upload a **Rice Leaf Image** and the model will
 
+# - Detect the disease
+# - Show confidence score
+# - Explain prediction using Grad-CAM
+# - Display disease information
+# """
+# )
+
+# st.divider()
+
+st.markdown("""
+<div class="hero">
+
+<h1>🌾 Rice Leaf Disease Detection</h1>
+
+<p class="subtitle">
+AI-Powered Crop Disease Diagnosis using EfficientNet-B0 and Grad-CAM
+</p>
+
+<div class="hero-stats">
+
+<div class="stat-card">
+<h2>99.33%</h2>
+<p>Accuracy</p>
+</div>
+
+<div class="stat-card">
+<h2>4</h2>
+<p>Diseases</p>
+</div>
+
+<div class="stat-card">
+<h2>AI</h2>
+<p>Explainable</p>
+</div>
+
+</div>
+
+</div>
+""", unsafe_allow_html=True)
 
 # ============================================================
 # Load Model

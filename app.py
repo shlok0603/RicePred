@@ -77,6 +77,7 @@ AI-Powered Crop Disease Diagnosis using EfficientNet-B0 and Grad-CAM
 
 </div>
 """, unsafe_allow_html=True)
+st.markdown("### 📤 Upload a rice leaf image below to begin diagnosis")
 
 # ============================================================
 # Load Model
@@ -144,44 +145,55 @@ transform = transforms.Compose([
 # Sidebar
 # ============================================================
 
-st.sidebar.header("Project Information")
+with st.sidebar:
 
-st.sidebar.info(
-"""
-### Rice Leaf Disease Detection
+    st.markdown("# 🌾 Rice AI")
 
-**Model**
-- EfficientNet-B0
+    st.caption("Deep Learning Powered Crop Diagnosis")
 
-**Framework**
-- PyTorch
+    st.divider()
 
-**Explainability**
-- Grad-CAM
+    st.markdown("## 📊 Model")
 
-**Classes**
-- Bacterial Blight
-- Blast
-- Brown Spot
-- Tungro
-"""
-)
+    st.metric("Accuracy", "99.33%")
+
+    st.metric("Diseases", "4")
+
+    st.metric("Framework", "PyTorch")
+
+    st.divider()
+
+    st.markdown("## 🧠 Architecture")
+
+    st.success("EfficientNet-B0")
+
+    st.info("Grad-CAM Explainability")
+
+    st.divider()
+
+    st.markdown("## 🌱 Supported Diseases")
+
+    st.markdown("""
+- 🦠 Bacterial Blight
+- 🍂 Blast
+- 🟤 Brown Spot
+- 🟡 Tungro
+""")
 
 
 # ============================================================
 # Upload Image
 # ============================================================
 
+st.markdown("## 📤 Upload Image")
+
+st.caption(
+    "Supported formats: JPG • JPEG • PNG"
+)
+
 uploaded_file = st.file_uploader(
-
-    "Upload Rice Leaf Image",
-
-    type=[
-        "jpg",
-        "jpeg",
-        "png"
-    ]
-
+    "",
+    type=["jpg", "jpeg", "png"]
 )
 
 # ============================================================

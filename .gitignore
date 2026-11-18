@@ -11,3 +11,6 @@ __pycache__/
 # Virtual environments
 venv/
 .venv/
+
+# SQLite database (generated at runtime)
+predictions.db

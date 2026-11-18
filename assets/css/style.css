@@ -1,14 +1,14 @@
 /* ============================================================
-   RicePred AI – Olive Theme
+   RicePred AI – Light Green & White Theme
    ============================================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
 
 /* ---- Reset & Base ---- */
 .stApp {
-    background-color: #1a1c14;
+    background-color: #f0f7f0;
     font-family: 'Inter', sans-serif;
-    color: #d6d9c4;
+    color: #1a2e1a;
 }
 
 .block-container {
@@ -18,37 +18,37 @@
 }
 
 h1, h2, h3 {
-    color: #c8cc6a;
+    color: #1e5c1e;
     font-family: 'Inter', sans-serif;
 }
 
-p, li, span {
-    color: #b5b89e;
+p, li {
+    color: #3d5c3d;
 }
 
 /* ---- Buttons ---- */
 .stButton > button {
-    background: linear-gradient(135deg, #6b7a2a, #8fa030);
-    color: #f0f0dc;
+    background: linear-gradient(135deg, #2e7d32, #4caf50);
+    color: #ffffff;
     border-radius: 10px;
     border: none;
     padding: 0.6rem 1.5rem;
     font-weight: 700;
     font-size: 15px;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.2px;
     transition: all 0.2s ease;
-    box-shadow: 0 4px 14px rgba(107, 122, 42, 0.35);
+    box-shadow: 0 4px 14px rgba(46, 125, 50, 0.28);
 }
 
 .stButton > button:hover {
-    background: linear-gradient(135deg, #8fa030, #a8bb38);
-    box-shadow: 0 6px 20px rgba(143, 160, 48, 0.45);
+    background: linear-gradient(135deg, #1b5e20, #2e7d32);
+    box-shadow: 0 6px 20px rgba(46, 125, 50, 0.38);
     transform: translateY(-2px);
 }
 
 .stButton > button:disabled {
-    background: #2a2d20;
-    color: #4a4d3a;
+    background: #d8e8d8;
+    color: #9ab89a;
     box-shadow: none;
     transform: none;
     cursor: not-allowed;
@@ -56,89 +56,81 @@ p, li, span {
 
 /* ---- File Uploader ---- */
 [data-testid="stFileUploader"] {
-    border: 2px dashed #3a4020;
+    border: 2px dashed #81c784;
     border-radius: 16px;
     padding: 20px;
-    background: #1f2218;
-    transition: border-color 0.2s;
+    background: #ffffff;
+    transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 [data-testid="stFileUploader"]:hover {
-    border-color: #8fa030;
+    border-color: #2e7d32;
+    box-shadow: 0 4px 16px rgba(46, 125, 50, 0.12);
 }
 
 /* ---- Images ---- */
 img {
     border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 }
 
 /* ---- Metric Cards ---- */
 [data-testid="metric-container"] {
-    background: #1f2218;
+    background: #ffffff;
     border-radius: 14px;
     padding: 15px;
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
-    border: 1px solid #2e3220;
-}
-
-[data-testid="metric-container"] p,
-[data-testid="metric-container"] span {
-    color: #7a7d62 !important;
+    box-shadow: 0 2px 12px rgba(46, 125, 50, 0.10);
+    border: 1px solid #c8e6c9;
 }
 
 [data-testid="metric-container"] [data-testid="stMetricValue"] {
-    color: #c8cc6a !important;
+    color: #2e7d32 !important;
 }
 
 /* ---- Sidebar ---- */
 section[data-testid="stSidebar"] {
-    background: linear-gradient(180deg, #141710 0%, #1a1c14 100%);
-    border-right: 1px solid #252818;
-}
-
-section[data-testid="stSidebar"] p,
-section[data-testid="stSidebar"] span,
-section[data-testid="stSidebar"] label {
-    color: #7a7d62;
+    background: linear-gradient(180deg, #ffffff 0%, #f4fbf4 100%);
+    border-right: 1px solid #c8e6c9;
 }
 
 /* ---- Expanders ---- */
 [data-testid="stExpander"] {
-    border: 1px solid #2e3220;
+    border: 1px solid #c8e6c9;
     border-radius: 12px;
     margin-bottom: 10px;
-    background: #1f2218;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgba(46, 125, 50, 0.06);
 }
 
 [data-testid="stExpander"] summary {
-    color: #d6d9c4;
+    color: #1e5c1e;
     font-weight: 600;
 }
 
 /* ---- Progress bar ---- */
 [data-testid="stProgressBar"] > div > div {
-    background: linear-gradient(90deg, #6b7a2a, #a8bb38);
+    background: linear-gradient(90deg, #43a047, #81c784);
     border-radius: 10px;
 }
 
 /* ---- Dataframe ---- */
 [data-testid="stDataFrame"] {
-    background: #1f2218;
+    background: #ffffff;
     border-radius: 12px;
-    border: 1px solid #2e3220;
+    border: 1px solid #c8e6c9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 /* ---- Divider ---- */
 hr {
-    border-color: #252818;
+    border-color: #dcedc8;
 }
 
 /* ---- Alerts ---- */
 [data-testid="stAlert"] {
     border-radius: 12px;
-    background: #1f2218;
-    border: 1px solid #3a4020;
-    color: #d6d9c4;
+    background: #f1f8f1;
+    border: 1px solid #a5d6a7;
 }
 
 /* ============================================================
@@ -150,10 +142,8 @@ hr {
     padding: 56px 30px 48px;
     margin: 0 0 36px;
     border-radius: 24px;
-    background: linear-gradient(135deg, #161910 0%, #1e2214 50%, #252a18 100%);
-    border: 1px solid #2e3220;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.55),
-                inset 0 1px 0 rgba(200, 204, 106, 0.07);
+    background: linear-gradient(135deg, #2e7d32 0%, #43a047 50%, #66bb6a 100%);
+    box-shadow: 0 16px 48px rgba(46, 125, 50, 0.28);
     position: relative;
     overflow: hidden;
 }
@@ -161,10 +151,20 @@ hr {
 .app-hero::before {
     content: '';
     position: absolute;
-    top: -60px; right: -60px;
+    top: -80px; right: -80px;
     width: 320px; height: 320px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(143, 160, 48, 0.12) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(255,255,255,0.12) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.app-hero::after {
+    content: '';
+    position: absolute;
+    bottom: -60px; left: -60px;
+    width: 240px; height: 240px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%);
     pointer-events: none;
 }
 
@@ -173,6 +173,7 @@ hr {
     margin-bottom: 12px;
     display: inline-block;
     animation: sway 4s ease-in-out infinite;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.15));
 }
 
 @keyframes sway {
@@ -183,27 +184,28 @@ hr {
 .app-hero h1 {
     font-size: 52px;
     margin: 0;
-    color: #c8cc6a;
+    color: #ffffff;
     font-weight: 800;
     letter-spacing: -1px;
+    text-shadow: 0 2px 12px rgba(0,0,0,0.15);
 }
 
 .app-tagline {
     font-size: 20px;
     margin-top: 14px;
-    color: rgba(214, 217, 196, 0.80);
+    color: rgba(255,255,255,0.90);
     line-height: 1.6;
 }
 
 .app-tagline span {
     font-size: 16px;
-    color: rgba(214, 217, 196, 0.50);
+    color: rgba(255,255,255,0.68);
 }
 
 .app-hero-desc {
     margin-top: 18px;
     font-size: 15px;
-    color: rgba(214, 217, 196, 0.55);
+    color: rgba(255,255,255,0.72);
     max-width: 520px;
     margin-left: auto;
     margin-right: auto;
@@ -218,31 +220,31 @@ hr {
 
 .crop-heading h2 {
     margin: 0;
-    color: #c8cc6a;
+    color: #1e5c1e;
     font-size: 26px;
     font-weight: 700;
 }
 
 /* ---- Crop Cards ---- */
 .crop-card {
-    background: #1f2218;
+    background: #ffffff;
     border-radius: 20px;
     padding: 28px 15px;
     text-align: center;
     min-height: 190px;
-    border: 1px solid #2e3220;
-    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+    border: 1.5px solid #e0f0e0;
+    box-shadow: 0 4px 18px rgba(46, 125, 50, 0.08);
     transition: all 0.25s ease;
 }
 
 .crop-card.available {
-    border: 1.5px solid #8fa030;
-    box-shadow: 0 6px 28px rgba(143, 160, 48, 0.20);
+    border: 2px solid #66bb6a;
+    box-shadow: 0 6px 24px rgba(102, 187, 106, 0.20);
 }
 
 .crop-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 14px 36px rgba(0, 0, 0, 0.45);
+    box-shadow: 0 12px 32px rgba(46, 125, 50, 0.16);
 }
 
 .crop-icon {
@@ -252,14 +254,14 @@ hr {
 
 .crop-card h3 {
     margin: 5px 0 0;
-    color: #d6d9c4;
+    color: #1e5c1e;
     font-size: 19px;
     font-weight: 700;
 }
 
 .crop-card p {
     margin: 4px 0 12px;
-    color: #4e5240;
+    color: #7a9e7a;
     font-size: 14px;
 }
 
@@ -268,22 +270,22 @@ hr {
     display: inline-block;
     padding: 5px 14px;
     border-radius: 20px;
-    background: rgba(143, 160, 48, 0.15);
-    color: #c8cc6a;
+    background: #e8f5e9;
+    color: #2e7d32;
     font-size: 13px;
     font-weight: 700;
-    border: 1px solid rgba(143, 160, 48, 0.30);
+    border: 1px solid #a5d6a7;
 }
 
 .coming-badge {
     display: inline-block;
     padding: 5px 14px;
     border-radius: 20px;
-    background: #252818;
-    color: #4e5240;
+    background: #f5f5f5;
+    color: #9e9e9e;
     font-size: 13px;
     font-weight: 600;
-    border: 1px solid #2e3220;
+    border: 1px solid #e0e0e0;
 }
 
 /* ---- Features Row ---- */
@@ -297,18 +299,18 @@ hr {
 .feature-card {
     flex: 1;
     min-width: 180px;
-    background: #1f2218;
+    background: #ffffff;
     border-radius: 16px;
     padding: 24px 18px;
     text-align: center;
-    border: 1px solid #2e3220;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.30);
+    border: 1.5px solid #e0f0e0;
+    box-shadow: 0 3px 14px rgba(46, 125, 50, 0.07);
     transition: all 0.2s ease;
 }
 
 .feature-card:hover {
-    border-color: #8fa030;
-    box-shadow: 0 6px 24px rgba(143, 160, 48, 0.14);
+    border-color: #66bb6a;
+    box-shadow: 0 6px 24px rgba(46, 125, 50, 0.14);
     transform: translateY(-3px);
 }
 
@@ -320,13 +322,13 @@ hr {
 .feature-title {
     font-size: 15px;
     font-weight: 700;
-    color: #c8cc6a;
+    color: #2e7d32;
     margin-bottom: 6px;
 }
 
 .feature-desc {
     font-size: 13px;
-    color: #4e5240;
+    color: #7a9e7a;
     line-height: 1.5;
 }
 
@@ -349,34 +351,34 @@ hr {
 .sidebar-title {
     font-size: 19px;
     font-weight: 800;
-    color: #c8cc6a;
+    color: #1e5c1e;
     letter-spacing: -0.3px;
 }
 
 .sidebar-subtitle {
     font-size: 12px;
-    color: #4e5240;
+    color: #7a9e7a;
     margin-top: 2px;
 }
 
 .sidebar-subtitle-hindi {
     font-size: 11px;
-    color: #3a3d2e;
+    color: #9aba9a;
     margin-top: 2px;
 }
 
 .sidebar-section-title {
     font-size: 10px;
     font-weight: 700;
-    color: #4e5240;
+    color: #9aba9a;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin: 10px 0 8px;
 }
 
 .sidebar-status {
-    background: #161910;
-    border: 1px solid #252818;
+    background: #f1fbf1;
+    border: 1px solid #c8e6c9;
     border-radius: 14px;
     padding: 15px;
     margin-top: 6px;
@@ -385,7 +387,7 @@ hr {
 .status-label {
     font-size: 10px;
     font-weight: 800;
-    color: #4e5240;
+    color: #7a9e7a;
     letter-spacing: 0.9px;
     margin-bottom: 8px;
     text-transform: uppercase;
@@ -394,18 +396,18 @@ hr {
 .status-crop {
     font-size: 15px;
     font-weight: 700;
-    color: #c8cc6a;
+    color: #1e5c1e;
 }
 
 .status-text {
     font-size: 12px;
-    color: #4e5240;
+    color: #7a9e7a;
     margin-top: 6px;
 }
 
 .status-text-hindi {
     font-size: 11px;
-    color: #3a3d2e;
+    color: #9aba9a;
     margin-top: 2px;
 }
 
@@ -417,12 +419,12 @@ hr {
     display: flex;
     align-items: center;
     gap: 24px;
-    background: linear-gradient(135deg, #161910, #1e2214);
-    border: 1px solid #2e3220;
+    background: linear-gradient(135deg, #ffffff, #f4fbf4);
+    border: 1.5px solid #c8e6c9;
     border-radius: 20px;
     padding: 28px 32px;
     margin-bottom: 28px;
-    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 4px 20px rgba(46, 125, 50, 0.09);
 }
 
 .diagnosis-icon {
@@ -433,20 +435,20 @@ hr {
 
 .diagnosis-header h1 {
     margin: 0 0 6px 0;
-    color: #c8cc6a;
+    color: #1e5c1e;
     font-size: 32px;
     font-weight: 800;
 }
 
 .diagnosis-header p {
     margin: 0 0 10px 0;
-    color: #7a7d62;
+    color: #4a7c4a;
     font-size: 18px;
     font-weight: 500;
 }
 
 .diagnosis-header span {
-    color: #4e5240;
+    color: #7a9e7a;
     font-size: 14px;
     line-height: 1.6;
 }
@@ -461,21 +463,21 @@ hr {
 }
 
 .upload-intro h2 {
-    color: #c8cc6a;
+    color: #1e5c1e;
     font-size: 24px;
     margin-bottom: 4px;
     font-weight: 700;
 }
 
 .upload-intro p {
-    color: #4e5240;
+    color: #7a9e7a;
     font-size: 15px;
     line-height: 1.6;
     margin: 0;
 }
 
 .upload-format-hint {
-    color: #3a3d2e;
+    color: #9aba9a;
     font-size: 13px;
     margin-top: 6px;
 }
@@ -484,10 +486,11 @@ hr {
 .upload-placeholder {
     text-align: center;
     padding: 48px 20px;
-    background: #1f2218;
-    border: 2px dashed #2e3220;
+    background: #ffffff;
+    border: 2px dashed #c8e6c9;
     border-radius: 18px;
     margin-top: 16px;
+    box-shadow: 0 2px 10px rgba(46, 125, 50, 0.06);
 }
 
 .upload-camera {
@@ -496,23 +499,23 @@ hr {
 }
 
 .upload-main-text {
-    color: #7a7d62;
+    color: #4a7c4a;
     font-size: 17px;
     line-height: 1.6;
 }
 
 .upload-main-text strong {
-    color: #d6d9c4;
+    color: #1e5c1e;
 }
 
 .upload-main-text span {
-    color: #4e5240;
+    color: #7a9e7a;
     font-size: 15px;
 }
 
 .upload-format {
     margin-top: 14px;
-    color: #3a3d2e;
+    color: #9aba9a;
     font-size: 13px;
     letter-spacing: 0.5px;
 }
@@ -529,32 +532,31 @@ hr {
     font-size: 11px;
     font-weight: 800;
     letter-spacing: 1.5px;
-    color: #8fa030;
+    color: #43a047;
     text-transform: uppercase;
     margin-bottom: 6px;
 }
 
 .result-header h2 {
     margin: 0 0 4px;
-    color: #c8cc6a;
+    color: #1e5c1e;
     font-size: 28px;
     font-weight: 800;
 }
 
 .result-header p {
     margin: 0;
-    color: #4e5240;
+    color: #7a9e7a;
     font-size: 15px;
 }
 
 /* Result card */
 .diagnosis-result-card {
-    background: linear-gradient(135deg, #161910, #1e2214);
+    background: #ffffff;
     border-radius: 20px;
     padding: 28px 30px;
-    border: 1px solid #2e3220;
-    box-shadow: 0 10px 36px rgba(0, 0, 0, 0.40),
-                inset 0 1px 0 rgba(200, 204, 106, 0.05);
+    border: 1.5px solid #c8e6c9;
+    box-shadow: 0 8px 32px rgba(46, 125, 50, 0.12);
     margin-bottom: 18px;
 }
 
@@ -564,7 +566,7 @@ hr {
     gap: 10px;
     font-size: 12px;
     font-weight: 700;
-    color: #8fa030;
+    color: #2e7d32;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 20px;
@@ -575,15 +577,15 @@ hr {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #a8bb38;
-    box-shadow: 0 0 0 3px rgba(168, 187, 56, 0.20);
+    background: #4caf50;
+    box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.22);
     animation: pulse 2.5s ease-in-out infinite;
     flex-shrink: 0;
 }
 
 @keyframes pulse {
-    0%, 100% { box-shadow: 0 0 0 3px rgba(168, 187, 56, 0.20); }
-    50%        { box-shadow: 0 0 0 9px rgba(168, 187, 56, 0.05); }
+    0%, 100% { box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.22); }
+    50%        { box-shadow: 0 0 0 9px rgba(76, 175, 80, 0.06); }
 }
 
 .result-disease {
@@ -597,7 +599,7 @@ hr {
 .result-label {
     font-size: 11px;
     font-weight: 700;
-    color: #4e5240;
+    color: #9aba9a;
     text-transform: uppercase;
     letter-spacing: 0.8px;
     margin-bottom: 6px;
@@ -606,7 +608,7 @@ hr {
 .result-disease-name {
     font-size: 38px;
     font-weight: 800;
-    color: #c8cc6a;
+    color: #1e5c1e;
     line-height: 1.1;
     letter-spacing: -0.5px;
 }
@@ -618,7 +620,7 @@ hr {
 .confidence-value {
     font-size: 46px;
     font-weight: 800;
-    color: #8fa030;
+    color: #2e7d32;
     line-height: 1;
     letter-spacing: -1px;
 }
@@ -633,7 +635,7 @@ hr {
     gap: 18px;
     margin: 36px 0 18px;
     padding-bottom: 14px;
-    border-bottom: 1px solid #252818;
+    border-bottom: 1.5px solid #e0f0e0;
 }
 
 .section-icon {
@@ -644,14 +646,14 @@ hr {
 
 .section-heading h2 {
     margin: 0 0 4px;
-    color: #c8cc6a;
+    color: #1e5c1e;
     font-size: 24px;
     font-weight: 800;
 }
 
 .section-heading p {
     margin: 0;
-    color: #4e5240;
+    color: #7a9e7a;
     font-size: 13px;
 }
 
@@ -662,7 +664,7 @@ hr {
 .image-card-title {
     font-size: 14px;
     font-weight: 700;
-    color: #d6d9c4;
+    color: #1e5c1e;
     margin-bottom: 8px;
     display: flex;
     flex-direction: column;
@@ -672,7 +674,7 @@ hr {
 .image-card-title span {
     font-size: 12px;
     font-weight: 400;
-    color: #4e5240;
+    color: #7a9e7a;
 }
 
 /* ============================================================
@@ -680,24 +682,23 @@ hr {
    ============================================================ */
 
 .disease-title-card {
-    background: linear-gradient(135deg, #1a1e0e, #222614);
-    border: 1px solid rgba(143, 160, 48, 0.30);
+    background: linear-gradient(135deg, #2e7d32, #43a047);
     border-radius: 16px;
     padding: 20px 26px;
     margin-bottom: 16px;
-    box-shadow: 0 6px 24px rgba(107, 122, 42, 0.14);
+    box-shadow: 0 6px 24px rgba(46, 125, 50, 0.22);
 }
 
 .disease-title {
     font-size: 30px;
     font-weight: 800;
-    color: #c8cc6a;
+    color: #ffffff;
     letter-spacing: -0.5px;
 }
 
 .disease-title-hindi {
     font-size: 13px;
-    color: rgba(143, 160, 48, 0.60);
+    color: rgba(255,255,255,0.68);
     margin-top: 4px;
 }
 
@@ -709,12 +710,12 @@ hr {
     display: flex;
     align-items: flex-start;
     gap: 22px;
-    background: linear-gradient(135deg, #161910, #1e2214);
-    border: 1px solid #2e3220;
+    background: linear-gradient(135deg, #f1fbf1, #ffffff);
+    border: 1.5px solid #c8e6c9;
     border-radius: 20px;
     padding: 28px 30px;
     margin: 28px 0;
-    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 4px 20px rgba(46, 125, 50, 0.09);
 }
 
 .summary-icon {
@@ -725,23 +726,23 @@ hr {
 
 .final-summary h3 {
     margin: 0 0 12px;
-    color: #c8cc6a;
+    color: #1e5c1e;
     font-size: 22px;
     font-weight: 800;
 }
 
 .final-summary p {
     margin: 0 0 8px;
-    color: #7a7d62;
+    color: #3d5c3d;
     font-size: 16px;
     line-height: 1.6;
 }
 
 .final-summary strong {
-    color: #c8cc6a;
+    color: #1e5c1e;
 }
 
 .summary-hindi {
-    color: #4e5240 !important;
+    color: #7a9e7a !important;
     font-size: 14px !important;
 }
